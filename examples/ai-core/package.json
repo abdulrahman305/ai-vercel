@@ -19,7 +19,7 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/node": "20.11.20",
+    "@types/node": "20.14.2",
     "tsx": "4.7.1",
     "typescript": "5.1.3"
   }
