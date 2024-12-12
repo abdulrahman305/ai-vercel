@@ -29,9 +29,9 @@
     }
   },
   "dependencies": {
-    "@ai-sdk/openai": "0.0.27",
+    "@ai-sdk/openai": "1.0.8",
     "@ai-sdk/provider": "0.0.10",
-    "@ai-sdk/provider-utils": "0.0.13"
+    "@ai-sdk/provider-utils": "2.0.4"
   },
   "devDependencies": {
     "@types/node": "^18",
