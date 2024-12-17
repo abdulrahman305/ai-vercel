@@ -25,7 +25,7 @@
     }
   },
   "dependencies": {
-    "@ai-sdk/ui-utils": "0.0.1",
+    "@ai-sdk/ui-utils": "1.0.5",
     "swrv": "1.0.4"
   },
   "devDependencies": {
