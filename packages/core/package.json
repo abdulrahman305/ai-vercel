@@ -110,7 +110,7 @@
     "eslint": "^7.32.0",
     "eslint-config-vercel-ai": "workspace:*",
     "jsdom": "^24.0.0",
-    "langchain": "0.0.196",
+    "langchain": "0.3.3",
     "msw": "2.0.9",
     "openai": "4.47.1",
     "react-dom": "^18",
