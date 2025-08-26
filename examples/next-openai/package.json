@@ -28,6 +28,7 @@
     "@vercel/blob": "^0.26.0",
     "ai": "workspace:*",
     "next": "latest",
+    "openai": "4.50.0",
     "react": "^18",
     "react-dom": "^18",
     "react-markdown": "9.0.1",
@@ -46,5 +47,8 @@
     "tailwindcss": "^3.4.15",
     "typescript": "5.8.3",
     "@vercel/ai-tsconfig": "workspace:*"
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "typescript": "5.4.5"
   }
 }
