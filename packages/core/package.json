@@ -83,7 +83,7 @@
     "@ai-sdk/ui-utils": "0.0.1",
     "@ai-sdk/vue": "0.0.1",
     "eventsource-parser": "1.1.2",
-    "jsondiffpatch": "0.6.0",
+    "jsondiffpatch": "0.7.2",
     "json-schema": "0.4.0",
     "nanoid": "3.3.8",
     "secure-json-parse": "2.7.0",
