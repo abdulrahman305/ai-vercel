@@ -1,3 +1,4 @@
+import { ToolNameMapping } from '@ai-sdk/provider-utils';
 import { prepareResponsesTools } from './openai-responses-prepare-tools';
 import { describe, it, expect } from 'vitest';
 
@@ -7,12 +8,13 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.code_interpreter',
             name: 'code_interpreter',
             args: {},
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -37,7 +39,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.code_interpreter',
             name: 'code_interpreter',
             args: {
@@ -45,6 +47,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -66,7 +69,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.code_interpreter',
             name: 'code_interpreter',
             args: {
@@ -76,6 +79,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -104,7 +108,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.code_interpreter',
             name: 'code_interpreter',
             args: {
@@ -114,6 +118,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -138,7 +143,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.code_interpreter',
             name: 'code_interpreter',
             args: {
@@ -148,6 +153,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -172,7 +178,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.code_interpreter',
             name: 'code_interpreter',
             args: {},
@@ -219,7 +225,7 @@ describe('prepareResponsesTools', () => {
             },
           },
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.code_interpreter',
             name: 'code_interpreter',
             args: {
@@ -227,6 +233,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: true,
       });
 
@@ -264,7 +271,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.image_generation',
             name: 'image_generation',
             args: {
@@ -277,6 +284,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -307,7 +315,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.image_generation',
             name: 'image_generation',
             args: {},
@@ -342,12 +350,13 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.local_shell',
             name: 'local_shell',
             args: {},
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -370,12 +379,13 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.web_search',
             name: 'web_search',
             args: {},
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -400,7 +410,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.web_search',
             name: 'web_search',
             args: {
@@ -408,6 +418,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -432,7 +443,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.web_search',
             name: 'web_search',
             args: {
@@ -440,6 +451,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -464,7 +476,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.web_search',
             name: 'web_search',
             args: {
@@ -483,6 +495,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -518,7 +531,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.web_search',
             name: 'web_search',
             args: {
@@ -528,6 +541,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: false,
       });
 
@@ -556,7 +570,7 @@ describe('prepareResponsesTools', () => {
       const result = await prepareResponsesTools({
         tools: [
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.web_search',
             name: 'web_search',
             args: {
@@ -605,7 +619,7 @@ describe('prepareResponsesTools', () => {
             },
           },
           {
-            type: 'provider-defined',
+            type: 'provider',
             id: 'openai.web_search',
             name: 'web_search',
             args: {
@@ -614,6 +628,7 @@ describe('prepareResponsesTools', () => {
             },
           },
         ],
+        toolChoice: undefined,
         strictJsonSchema: true,
       });
 
