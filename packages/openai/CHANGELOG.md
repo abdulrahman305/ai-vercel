@@ -1,5 +1,20 @@
 # @ai-sdk/openai
 
+## 3.0.0-beta.111
+
+### Patch Changes
+
+- 304222e: Add streaming support for apply_patch partial diffs.
+
+## 3.0.0-beta.110
+
+### Patch Changes
+
+- 2625a04: feat(openai); update spec for mcp approval
+- Updated dependencies [2625a04]
+  - @ai-sdk/provider@3.0.0-beta.31
+  - @ai-sdk/provider-utils@4.0.0-beta.58
+
 ## 3.0.0-beta.109
 
 ### Patch Changes
